@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Câmara de Comércio Brasil-Macedônia</title>
+<style>
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    line-height: 1.6;
+    background-color: #fff8e6;
+    color: #333;
+}
+header {
+    background-color: #d20000; /* vermelho Macedônia */
+    color: #ffed00; /* amarelo Macedônia */
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header img.logo {
+    height: 60px;
+}
+.lang-switch {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+.lang-switch a img {
+    width: 32px;
+    height: 20px;
+    object-fit: cover;
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+nav {
+    background-color: #ffed00; /* amarelo */
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #d20000; /* vermelho Macedônia */
+    text-decoration: none;
+    padding: 10px 0;
+    display: inline-block;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    border-bottom: 2px solid #d20000;
+}
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+section h2 {
+    color: #d20000;
+    margin-bottom: 20px;
+}
+.services, .news {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+footer {
+    background-color: #d20000;
+    color: #ffed00;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-form button {
+    background-color: #d20000;
+    color: #ffed00;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.contact-form button:hover {
+    background-color: #a00000;
+}
+/* Responsivo para bandeirinhas */
+@media(max-width:600px){
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .lang-switch {
+        margin-top: 10px;
+    }
+}
+</style>
+</head>
+<body>
+<header>
+    <img src="logo.png" alt="Бразилско-Македонска Стопанска Комора Лого" class="logo">
+    <div class="lang-switch">
+        <a href="index-pt.html"><img src="brasil.png" alt="Português" title="Português"></a>
+        <a href="index.html"><img src="eua.png" alt="English" title="English"></a>
+        <a href="index-mk.html"><img src="macedonia.png" alt="Macedonian" title="Macedonian"></a>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#noticias">Notícias</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+</nav>
+
+<section id="home">
+    <h2>Bem-vindo à Câmara de Comércio Brasil-Macedônia</h2>
+    <p>Promovemos o fortalecimento das relações comerciais e culturais entre Brasil e Macedônia, conectando empresas, investidores e profissionais para oportunidades de negócios internacionais.</p>
+</section>
+
+<section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>A Câmara de Comércio Brasil-Macedônia é uma organização que busca facilitar negócios e intercâmbios culturais entre os dois países. Nosso objetivo é apoiar empresas brasileiras e macedônias em suas operações internacionais e criar um ambiente de cooperação sustentável.</p>
+</section>
+
+<section id="servicos">
+    <h2>Serviços</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Consultoria Comercial</h3>
+            <p>Oferecemos orientação para empresas que desejam expandir seus negócios entre Brasil e Macedônia.</p>
+        </div>
+        <div class="card">
+            <h3>Eventos e Networking</h3>
+            <p>Organizamos feiras, seminários e encontros empresariais para fortalecer a rede de contatos.</p>
+        </div>
+        <div class="card">
+            <h3>Intercâmbio Cultural</h3>
+            <p>Promovemos atividades culturais que incentivam a integração entre os países.</p>
+        </div>
+    </div>
+</section>
+
+<section id="noticias">
+    <h2>Últimas Notícias</h2>
+    <div class="news">
+        <div class="card">
+            <h3>Nova Feira de Negócios Brasil-Macedônia</h3>
+            <p>Empresas de ambos os países se reunirão para explorar oportunidades de parceria e investimento.</p>
+        </div>
+        <div class="card">
+            <h3>Workshop de Exportação</h3>
+            <p>Aprenda sobre processos de exportação e importação entre Brasil e Macedônia com especialistas.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contato">
+    <h2>Contato</h2>
+    <form action="mailto:rodrigo@diplotrade.org" method="post" enctype="text/plain" class="contact-form">
+    <input type="text" name="name" placeholder="Nome" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" rows="5" placeholder="Mensagem" required></textarea>
+    <button type="submit">Enviar</button>
+</form>
+
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Câmara de Comércio Brasil-Macedônia. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>

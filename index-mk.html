@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Бразилско-Македонска Стопанска Комора</title>
+<style>
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    line-height: 1.6;
+    background-color: #fff8e6;
+    color: #333;
+}
+header {
+    background-color: #d20000; /* Macedonian red */
+    color: #ffed00; /* Macedonian yellow */
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header img.logo {
+    height: 60px;
+}
+.lang-switch {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+.lang-switch a img {
+    width: 32px;
+    height: 20px;
+    object-fit: cover;
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+nav {
+    background-color: #ffed00; /* yellow */
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #d20000; /* Macedonian red */
+    text-decoration: none;
+    padding: 10px 0;
+    display: inline-block;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    border-bottom: 2px solid #d20000;
+}
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+section h2 {
+    color: #d20000;
+    margin-bottom: 20px;
+}
+.services, .news {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+footer {
+    background-color: #d20000;
+    color: #ffed00;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-form button {
+    background-color: #d20000;
+    color: #ffed00;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.contact-form button:hover {
+    background-color: #a00000;
+}
+/* Responsive for flags */
+@media(max-width:600px){
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .lang-switch {
+        margin-top: 10px;
+    }
+}
+</style>
+</head>
+<body>
+<header>
+    <img src="logo.png" alt="Бразилско-Македонска Стопанска Комора Лого" class="logo">
+    <div class="lang-switch">
+        <a href="index-pt.html"><img src="brasil.png" alt="Portuguese" title="Portuguese"></a>
+        <a href="index.html"><img src="eua.png" alt="English" title="English"></a>
+        <a href="index-mk.html"><img src="macedonia.png" alt="Macedonian" title="Macedonian"></a>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Почетна</a></li>
+        <li><a href="#about">За Нас</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#news">Новости</a></li>
+        <li><a href="#contact">Контакт</a></li>
+    </ul>
+</nav>
+
+<section id="home">
+    <h2>Добредојдовте во Бразилско-Македонската Стопанска Комора</h2>
+    <p>Ние го промовираме зајакнувањето на трговските и културните односи помеѓу Бразил и Македонија, поврзувајќи компании, инвеститори и професионалци за меѓународни бизнис можности.</p>
+</section>
+
+<section id="about">
+    <h2>За Нас</h2>
+    <p>Бразилско-Македонската Стопанска Комора е организација која се стреми да овозможи деловни и културни разменувања помеѓу двете земји. Нашата цел е да ги поддржиме бразилските и македонските компании во нивните меѓународни операции и да создадеме одржива соработка.</p>
+</section>
+
+<section id="services">
+    <h2>Услуги</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Бизнис Консалтинг</h3>
+            <p>Нудиме насоки за компании кои сакаат да го прошират својот бизнис помеѓу Бразил и Македонија.</p>
+        </div>
+        <div class="card">
+            <h3>Настани и Мрежи</h3>
+            <p>Организираме саеми, семинари и бизнис состаноци за зајакнување на мрежата на контакти.</p>
+        </div>
+        <div class="card">
+            <h3>Културна Размена</h3>
+            <p>Промовираме културни активности кои ја охрабруваат интеграцијата помеѓу двете земји.</p>
+        </div>
+    </div>
+</section>
+
+<section id="news">
+    <h2>Најнови Новости</h2>
+    <div class="news">
+        <div class="card">
+            <h3>Нова Бразилско-Македонска Бизнис Саема</h3>
+            <p>Компании од двете земји ќе се соберат за да истражат можности за партнерство и инвестиции.</p>
+        </div>
+        <div class="card">
+            <h3>Работилница за Извоз</h3>
+            <p>Научете за процесите на извоз и увоз помеѓу Бразил и Македонија со експерти.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Контакт</h2>
+    <form action="mailto:rodrigo@diplotrade.org" method="post" enctype="text/plain" class="contact-form">
+    <input type="text" name="name" placeholder="Име" required>
+    <input type="email" name="email" placeholder="Е-пошта" required>
+    <textarea name="message" rows="5" placeholder="Порака" required></textarea>
+    <button type="submit">Прати</button>
+</form>
+
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Бразилско-Македонска Стопанска Комора. Сите права се задржани.</p>
+</footer>
+</body>
+</html>
